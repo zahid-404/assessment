@@ -1,0 +1,18 @@
+:root {
+  --menu-width: 250px;
+  --menu-background: #3282b8;
+  --menu-text-color: #fff;
+  --content-text-color: #000;
+  --header-text-color: #3282b8;
+  --spacing: 2rem;
+  --footer-background: #333;
+  --footer-text-color: #fff;
+}
+
+html {
+  font-size: 20px;
+}
+
+* {
+  box-sizing: content-box;
+}
