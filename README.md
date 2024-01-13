@@ -1,4 +1,8 @@
 # Lean Delivery
+
+> [!IMPORTANT]
+> Before starting, please fork this repository into your own GitHub account.
+
 ## Front-End Assessment
 Use the source code in `index.html` to create a well-formatted version of this simple website.
 
