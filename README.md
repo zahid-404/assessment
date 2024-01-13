@@ -4,7 +4,7 @@ Use the source code in `index.html` to create a well-formatted version of this s
 
 Refer to the attached screenshots for visual references of the desktop and mobile versions.
 
-### Requirements:
+### Requirements
 - Do not include any external dependencies; use only pure CSS and vanilla JS.
 - Use semantic HTML so your tags convey meaning.
   Feel free to add, remove, or replace any tags in the page to achieve this.
@@ -19,7 +19,7 @@ Refer to the attached screenshots for visual references of the desktop and mobil
 ### Application
 - When you're finished, send an email with the link to your finished project's GitHub Repo to jobs@lean.delivery. Include a brief explanation of why you would like to work for us and your salary expectation.
 
-### Visual references:
+### Visual references
 
 <img src="./img/desktop_example.png" alt="Desktop version" />
 
