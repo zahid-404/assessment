@@ -1,3 +1,4 @@
+/* Define global variables */
 :root {
   --menu-width: 250px;
   --menu-background: #3282b8;
@@ -9,10 +10,219 @@
   --footer-text-color: #fff;
 }
 
+/* Set base styles for HTML */
 html {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+/* Box-sizing rules */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* Reset body styles */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Main application container */
+.app {
+  display: flex;
+  background-color: #ddd;
+  width: 100%;
+}
+
+/* Sidebar styles */
+header {
+  background-color: var(--menu-background);
+  height: 100vh;
+  width: 250px;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Personal links in the menu */
+#menu .links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+#menu .links li {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+}
+
+#menu .links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu .links li::after {
+  content: "";
+  background-color: #fff;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+#menu .links li:hover::after {
+  width: 100%;
+}
+
+/* Content section styles */
+#content {
+  max-width: 88%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#content #date {
+  color: var(--header-text-color);
+  font-weight: bold;
   font-size: 20px;
 }
 
-* {
-  box-sizing: content-box;
+#content article {
+  padding: 2rem;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Footer styles */
+#content footer {
+  background-color: var(--footer-background);
+  width: 100%;
+  height: 1.5rem;
+  color: var(--footer-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 992px) {
+  .app {
+    flex-direction: column;
+  }
+
+  /* Adjust sidebar styles for smaller screens */
+  header {
+    width: 100%;
+    height: 5rem;
+    padding: 0;
+    padding-left: 2rem;
+  }
+
+  #menu {
+    width: 100%;
+  }
+
+  #menu .links {
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  #menu .links li {
+    padding-right: 2rem;
+  }
+
+  #menu .links li::after {
+    display: none;
+  }
+
+  /* Adjust content styles for smaller screens */
+  #content {
+    max-width: 100%;
+    height: fit-content;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  #content article {
+    padding: 0;
+    width: 85%;
+  }
+
+  /* Adjust footer styles for smaller screens */
+  footer {
+    text-align: center;
+    font-size: 10px !important;
+  }
+}
+
+/* Style for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  font-weight: 600;
+}
+
+/* Style close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style for the modal body */
+.modal-body {
+  text-align: center;
+}
+
+/* Style for social icons */
+.social-icons {
+  margin-top: 15px;
+}
+
+.icon-link {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #0077b5;
+  text-decoration: none;
+}
+.icon-link:hover {
+  color: #005885;
 }

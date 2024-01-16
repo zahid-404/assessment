@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta information -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Lean Delivery Assessment</title>
+
+    <!-- Stylesheet link -->
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Page title -->
+    <title>Lean Delivery Assessment</title>
   </head>
   <body>
-    <div>
-      <div id="header">
-        <p>{{name}}</p>
+    <!-- Main container -->
+    <div class="app">
+      <!-- Header section -->
+      <header id="header">
+        <!-- User name -->
+        <p id="name">{{name}}</p>
+
+        <!-- Navigation menu -->
         <div id="menu">
-          <ul>
-            <li>CV</li>
-            <li>GitHub</li>
-            <li>Contact</li>
+          <ul class="links">
+            <!-- CV link -->
+            <li>
+              <a
+                href="https://tv.okzahid.workers.dev/0:/Gdtot/Resume-Zahid.pdf"
+                target="_blank"
+                >CV</a
+              >
+            </li>
+
+            <!-- GitHub link -->
+            <li>
+              <a href="https://github.com/zahid-404" target="_blank"
+                >Portfolio</a
+              >
+            </li>
+
+            <!-- Contact link -->
+            <li>
+              <a href="#">Contact</a>
+            </li>
           </ul>
         </div>
-      </div>
+      </header>
+
+      <!-- Main content section -->
       <div id="content">
-        <p>{{date}}</p>
-        <div>
+        <!-- Current date -->
+        <p id="date">{{date}}</p>
+
+        <!-- Article content -->
+        <article>
           <p>
+            <!-- Content paragraphs -->
             I had seen little of Holmes lately. My marriage had drifted us away
             from each other. My own complete happiness, and the home-centred
             interests which rise up around the man who first finds himself
@@ -69,17 +108,68 @@
             before the fire and looked me over in his singular introspective
             fashion.
           </p>
-        </div>
-        <div id="footer">
-          <div>
-            <p>
-              Passage adapted from Arthur Conan Doyle's "A Scandal in Bohemia"
-              (1891)
-            </p>
+        </article>
+
+        <!-- Modal container -->
+        <div id="contactModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+              <p>Connect with me! 🌐🚀 and Thanks Samuel 🙌</p>
+
+              <div class="social-icons">
+                <!-- LinkedIn icon -->
+                <a
+                  href="https://www.linkedin.com/in/zahid-mohammad-117579121/"
+                  target="_blank"
+                  class="icon-link"
+                >
+                  <i class="fa fa-linkedin fa-2x"></i>
+                </a>
+                <!-- Github icon -->
+                <a
+                  href="https://github.com/zahid-404"
+                  target="_blank"
+                  class="icon-link"
+                >
+                  <i class="fa fa-github fa-2x"></i>
+                </a>
+                <!-- Gmail icon -->
+                <a
+                  href="mailto:zahidmohammd495@gmail.com"
+                  target="_blank"
+                  class="icon-link"
+                >
+                  <i class="fa fa-envelope fa-2x"></i>
+                </a>
+                <!-- WhatsApp icon -->
+                <a
+                  href="https://wa.me/+919079988211"
+                  target="_blank"
+                  class="icon-link"
+                >
+                  <i class="fa fa-whatsapp fa-2x"></i>
+                </a>
+
+                <!-- Telegram icon -->
+                <a href="https://t.me/z495m" target="_blank" class="icon-link">
+                  <i class="fa fa-telegram fa-2x"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Footer section -->
+        <footer>
+          <!-- Attribution for adapted passage -->
+          Passage adapted from Arthur Conan Doyle's "A Scandal in Bohemia"
+          (1891)
+        </footer>
       </div>
     </div>
+
+    <!-- JavaScript script -->
     <script src="script.js"></script>
   </body>
 </html>
